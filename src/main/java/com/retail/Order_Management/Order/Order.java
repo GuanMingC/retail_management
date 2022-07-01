@@ -1,4 +1,4 @@
-package com.retail.Data;
+package com.retail.Order_Management.Order;
 
 import java.util.ArrayList;
 
@@ -44,9 +44,8 @@ public Order(Integer order_id, Double order_price, ArrayList<String> order_list)
 	this.order_price = order_price;
 	this.order_list = order_list;
 }
-public Order(Integer order_id) {
+public Order() {
 	// TODO Auto-generated constructor stub
-	this.order_id = order_id;
 }
 
 

@@ -1,9 +1,9 @@
-package com.retail.Service;
+package com.retail.Order_Management.OrderService;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.retail.Data.Order;
+import com.retail.Order_Management.Order.Order;
 
 public interface OrderService {
 	List<Order> saveOrder(Order order);

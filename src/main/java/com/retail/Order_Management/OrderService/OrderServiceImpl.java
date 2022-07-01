@@ -1,4 +1,4 @@
-package com.retail.Service;
+package com.retail.Order_Management.OrderService;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.retail.Data.Order;
-import com.retail.Repo.OrderRepository;
+import com.retail.Order_Management.Order.Order;
+import com.retail.Order_Management.OrderRepo.OrderRepository;
 
 @Service
 public class OrderServiceImpl implements OrderService {
