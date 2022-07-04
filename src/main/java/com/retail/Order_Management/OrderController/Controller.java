@@ -20,7 +20,7 @@ import com.retail.Order_Management.OrderRepo.OrderRepository;
 import com.retail.Order_Management.OrderService.OrderService;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500", maxAge = 3600)
+@CrossOrigin(origins = "http://127.0.0.1:5500", maxAge = 3600, exposedHeaders = "Access-Control-Allow-Origin")
 @ComponentScan
 @RequestMapping("/api/order")
 public class Controller {
