@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.retail.Order_Management.Order.Order;
@@ -52,6 +53,12 @@ public class OrderServiceImpl implements OrderService {
 		// TODO Auto-generated method stub
 		repo.deleteById(id);
 		return repo.findAll();
+	}
+
+	@Override
+	public Optional<Order> getOrderByName(String name) {
+		// TODO Auto-generated method stub
+		return repo.findByName(name);
 	}
 
 }

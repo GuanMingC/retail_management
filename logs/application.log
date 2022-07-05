@@ -1,0 +1,965 @@
+2022-07-05 13:43:39.399  INFO 14584 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 14584 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 13:43:39.402  INFO 14584 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 13:43:40.099  INFO 14584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 13:43:40.153  INFO 14584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-07-05 13:43:40.685  INFO 14584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 13:43:40.696  INFO 14584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 13:43:40.697  INFO 14584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 13:43:40.879  INFO 14584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 13:43:40.880  INFO 14584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1432 ms
+2022-07-05 13:43:41.191  INFO 14584 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 13:43:41.326  INFO 14584 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 13:43:41.648  INFO 14584 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 13:43:41.829  INFO 14584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 13:43:42.597  INFO 14584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 13:43:42.675  INFO 14584 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 13:43:43.768  INFO 14584 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-05 13:43:43.780  INFO 14584 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 13:43:44.324  WARN 14584 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-05 13:43:44.646  WARN 14584 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-05 13:43:44.979  INFO 14584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-05 13:43:45.003  INFO 14584 --- [main] c.r.O.OrderManagementApplication         : Started OrderManagementApplication in 6.173 seconds (JVM running for 7.232)
+2022-07-05 13:45:14.574  INFO 14584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 13:45:14.574  INFO 14584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 13:45:14.576  INFO 14584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-05 13:45:36.497  INFO 14584 --- [http-nio-8080-exec-4] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:36.498 ERROR 14584 --- [http-nio-8080-exec-4] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:36.498  WARN 14584 --- [http-nio-8080-exec-4] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:45:44.231  INFO 14584 --- [http-nio-8080-exec-5] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:44.231 ERROR 14584 --- [http-nio-8080-exec-5] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:44.231  WARN 14584 --- [http-nio-8080-exec-5] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:45:44.970  INFO 14584 --- [http-nio-8080-exec-6] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:44.971 ERROR 14584 --- [http-nio-8080-exec-6] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:44.971  WARN 14584 --- [http-nio-8080-exec-6] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:45:45.368  INFO 14584 --- [http-nio-8080-exec-7] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:45.369 ERROR 14584 --- [http-nio-8080-exec-7] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:45.369  WARN 14584 --- [http-nio-8080-exec-7] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:45:45.534  INFO 14584 --- [http-nio-8080-exec-8] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:45.534 ERROR 14584 --- [http-nio-8080-exec-8] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:45.534  WARN 14584 --- [http-nio-8080-exec-8] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:45:45.686  INFO 14584 --- [http-nio-8080-exec-9] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:45.687 ERROR 14584 --- [http-nio-8080-exec-9] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:45.687  WARN 14584 --- [http-nio-8080-exec-9] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:45:45.841  INFO 14584 --- [http-nio-8080-exec-10] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:45.842 ERROR 14584 --- [http-nio-8080-exec-10] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:45.842  WARN 14584 --- [http-nio-8080-exec-10] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:45:46.110  INFO 14584 --- [http-nio-8080-exec-1] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:45:46.110 ERROR 14584 --- [http-nio-8080-exec-1] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:45:46.110  WARN 14584 --- [http-nio-8080-exec-1] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:19.145  INFO 14584 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-05 13:46:19.296  INFO 14584 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 13:46:19.299  INFO 14584 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 13:46:19.308  INFO 14584 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 13:46:26.677  INFO 14844 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 14844 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 13:46:26.680  INFO 14844 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 13:46:27.435  INFO 14844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 13:46:27.494  INFO 14844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2022-07-05 13:46:28.078  INFO 14844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 13:46:28.089  INFO 14844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 13:46:28.089  INFO 14844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 13:46:28.257  INFO 14844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 13:46:28.258  INFO 14844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1532 ms
+2022-07-05 13:46:28.479  INFO 14844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 13:46:28.546  INFO 14844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 13:46:28.841  INFO 14844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 13:46:28.972  INFO 14844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 13:46:29.625  INFO 14844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 13:46:29.644  INFO 14844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 13:46:30.385  INFO 14844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-05 13:46:30.396  INFO 14844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 13:46:30.832  WARN 14844 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-05 13:46:31.140  WARN 14844 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-05 13:46:31.291  INFO 14844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-05 13:46:31.465  INFO 14844 --- [main] c.r.O.OrderManagementApplication         : Started OrderManagementApplication in 5.283 seconds (JVM running for 6.186)
+2022-07-05 13:46:42.789  INFO 14844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 13:46:42.790  INFO 14844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 13:46:42.791  INFO 14844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-05 13:46:42.828  INFO 14844 --- [http-nio-8080-exec-1] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:42.829 ERROR 14844 --- [http-nio-8080-exec-1] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:42.829  WARN 14844 --- [http-nio-8080-exec-1] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:43.687  INFO 14844 --- [http-nio-8080-exec-2] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:43.688 ERROR 14844 --- [http-nio-8080-exec-2] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:43.688  WARN 14844 --- [http-nio-8080-exec-2] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:43.856  INFO 14844 --- [http-nio-8080-exec-3] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:43.858 ERROR 14844 --- [http-nio-8080-exec-3] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:43.859  WARN 14844 --- [http-nio-8080-exec-3] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:44.011  INFO 14844 --- [http-nio-8080-exec-4] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:44.011 ERROR 14844 --- [http-nio-8080-exec-4] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:44.011  WARN 14844 --- [http-nio-8080-exec-4] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:44.162  INFO 14844 --- [http-nio-8080-exec-5] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:44.163 ERROR 14844 --- [http-nio-8080-exec-5] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:44.163  WARN 14844 --- [http-nio-8080-exec-5] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:44.318  INFO 14844 --- [http-nio-8080-exec-6] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:44.319 ERROR 14844 --- [http-nio-8080-exec-6] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:44.319  WARN 14844 --- [http-nio-8080-exec-6] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:44.486  INFO 14844 --- [http-nio-8080-exec-7] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:44.487 ERROR 14844 --- [http-nio-8080-exec-7] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:44.488  WARN 14844 --- [http-nio-8080-exec-7] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:44.634  INFO 14844 --- [http-nio-8080-exec-8] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:44.634 ERROR 14844 --- [http-nio-8080-exec-8] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:44.634  WARN 14844 --- [http-nio-8080-exec-8] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:44.800  INFO 14844 --- [http-nio-8080-exec-9] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:44.800 ERROR 14844 --- [http-nio-8080-exec-9] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:44.801  WARN 14844 --- [http-nio-8080-exec-9] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 13:46:44.942  INFO 14844 --- [http-nio-8080-exec-10] c.r.O.OrderController.Controller         : Log level: INFO
+2022-07-05 13:46:44.943 ERROR 14844 --- [http-nio-8080-exec-10] c.r.O.OrderController.Controller         : Log level: ERROR
+2022-07-05 13:46:44.943  WARN 14844 --- [http-nio-8080-exec-10] c.r.O.OrderController.Controller         : Log level: WARN
+2022-07-05 14:12:17.315  INFO 14844 --- [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-05 14:12:17.547  INFO 14844 --- [RMI TCP Connection(29)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 14:12:17.563  INFO 14844 --- [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 14:12:17.582  INFO 14844 --- [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 14:12:22.097  INFO 12756 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 12756 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 14:12:22.100  INFO 12756 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 14:12:22.766  INFO 12756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 14:12:22.816  INFO 12756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2022-07-05 14:12:23.370  INFO 12756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 14:12:23.380  INFO 12756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 14:12:23.380  INFO 12756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 14:12:23.523  INFO 12756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 14:12:23.524  INFO 12756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1382 ms
+2022-07-05 14:12:23.746  INFO 12756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 14:12:23.814  INFO 12756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 14:12:24.111  INFO 12756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 14:12:24.233  INFO 12756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 14:12:24.739  INFO 12756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 14:12:24.760  INFO 12756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 14:12:25.464  INFO 12756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-05 14:12:25.473  INFO 12756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 14:12:25.955  WARN 12756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-05 14:12:26.275  WARN 12756 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-05 14:12:26.531  INFO 12756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-05 14:12:26.539  INFO 12756 --- [main] c.r.O.OrderManagementApplication         : Started OrderManagementApplication in 4.895 seconds (JVM running for 5.75)
+2022-07-05 14:12:38.976  INFO 12756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 14:12:38.976  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 14:12:38.977  INFO 12756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-05 14:12:39.026  INFO 12756 --- [http-nio-8080-exec-2] c.r.O.OrderController.Controller         : INFO: List all orders
+2022-07-05 14:21:09.448  INFO 12756 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-05 14:21:09.575  INFO 12756 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 14:21:09.577  INFO 12756 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 14:21:09.582  INFO 12756 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 14:21:13.931  INFO 13860 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 13860 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 14:21:13.934  INFO 13860 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 14:21:14.573  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 14:21:14.623  INFO 13860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2022-07-05 14:21:15.155  INFO 13860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 14:21:15.165  INFO 13860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 14:21:15.165  INFO 13860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 14:21:15.311  INFO 13860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 14:21:15.312  INFO 13860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1335 ms
+2022-07-05 14:21:15.505  INFO 13860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 14:21:15.558  INFO 13860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 14:21:15.811  INFO 13860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 14:21:15.926  INFO 13860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 14:21:16.414  INFO 13860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 14:21:16.432  INFO 13860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 14:21:17.106  INFO 13860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-05 14:21:17.115  INFO 13860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 14:21:17.519  WARN 13860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-05 14:21:17.773  WARN 13860 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-05 14:21:18.009  INFO 13860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-05 14:21:18.017  INFO 13860 --- [main] c.r.O.OrderManagementApplication         : Started OrderManagementApplication in 4.538 seconds (JVM running for 5.363)
+2022-07-05 14:21:22.157  INFO 13860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 14:21:22.158  INFO 13860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 14:21:22.159  INFO 13860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-05 14:21:22.207  INFO 13860 --- [http-nio-8080-exec-1] c.r.O.OrderController.Controller         : INFO: List all ordersorg.springframework.http.ResponseEntity$DefaultBuilder@45d95fb5
+2022-07-05 14:21:45.448  INFO 13860 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-05 14:21:45.589  INFO 13860 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 14:21:45.593  INFO 13860 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 14:21:45.598  INFO 13860 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 14:21:48.681  INFO 7036 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 7036 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 14:21:48.685  INFO 7036 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 14:21:49.365  INFO 7036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 14:21:49.418  INFO 7036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-07-05 14:21:49.964  INFO 7036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 14:21:49.975  INFO 7036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 14:21:49.976  INFO 7036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 14:21:50.170  INFO 7036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 14:21:50.171  INFO 7036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1440 ms
+2022-07-05 14:21:50.354  INFO 7036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 14:21:50.405  INFO 7036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 14:21:50.633  INFO 7036 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 14:21:50.738  INFO 7036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 14:21:51.203  INFO 7036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 14:21:51.221  INFO 7036 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 14:21:51.906  INFO 7036 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-05 14:21:51.917  INFO 7036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 14:21:52.301  WARN 7036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-05 14:21:52.589  WARN 7036 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-05 14:21:52.717  INFO 7036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-05 14:21:52.726  INFO 7036 --- [main] c.r.O.OrderManagementApplication         : Started OrderManagementApplication in 4.499 seconds (JVM running for 5.334)
+2022-07-05 14:21:58.612  INFO 7036 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-05 14:21:58.613  INFO 7036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-05 14:21:58.614  INFO 7036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-05 14:21:58.650  INFO 7036 --- [http-nio-8080-exec-2] c.r.O.OrderController.Controller         : INFO: List all orders org.springframework.http.ResponseEntity$DefaultBuilder@1d8b5bfc
+2022-07-05 16:26:30.824  INFO 7036 --- [RMI TCP Connection(128)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-05 16:26:31.237  INFO 7036 --- [RMI TCP Connection(128)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 16:26:31.304  INFO 7036 --- [RMI TCP Connection(128)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:26:31.320  INFO 7036 --- [RMI TCP Connection(128)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:26:40.853  INFO 13128 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 13128 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:26:40.856  INFO 13128 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:26:41.619  INFO 13128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:26:41.685  INFO 13128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:26:42.316  INFO 13128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:26:42.329  INFO 13128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:26:42.330  INFO 13128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:26:42.504  INFO 13128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:26:42.505  INFO 13128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1601 ms
+2022-07-05 16:26:42.738  INFO 13128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:26:42.805  INFO 13128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:26:43.099  INFO 13128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:26:43.231  INFO 13128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:26:43.796  INFO 13128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:26:43.821  INFO 13128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:26:44.174 ERROR 13128 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:26:44.175  WARN 13128 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:26:44.176  INFO 13128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:26:44.180  INFO 13128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:26:44.190  INFO 13128 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:26:44.199  INFO 13128 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:26:44.315 ERROR 13128 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:27:54.960  INFO 13836 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 13836 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:27:54.963  INFO 13836 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:27:55.729  INFO 13836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:27:55.794  INFO 13836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:27:56.421  INFO 13836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:27:56.432  INFO 13836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:27:56.433  INFO 13836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:27:56.609  INFO 13836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:27:56.610  INFO 13836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1597 ms
+2022-07-05 16:27:56.838  INFO 13836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:27:56.907  INFO 13836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:27:57.198  INFO 13836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:27:57.322  INFO 13836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:27:57.862  INFO 13836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:27:57.885  INFO 13836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:27:58.257 ERROR 13836 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:27:58.258  WARN 13836 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:27:58.258  INFO 13836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:27:58.262  INFO 13836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:27:58.265  INFO 13836 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:27:58.277  INFO 13836 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:27:58.306 ERROR 13836 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:28:58.094  INFO 10464 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 10464 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:28:58.098  INFO 10464 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:28:58.864  INFO 10464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:28:58.929  INFO 10464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:28:59.554  INFO 10464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:28:59.568  INFO 10464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:28:59.568  INFO 10464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:28:59.738  INFO 10464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:28:59.739  INFO 10464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1592 ms
+2022-07-05 16:28:59.994  INFO 10464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:29:00.079  INFO 10464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:29:00.358  INFO 10464 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:29:00.493  INFO 10464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:29:01.059  INFO 10464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:29:01.082  INFO 10464 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:29:01.408 ERROR 10464 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:29:01.409  WARN 10464 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:29:01.409  INFO 10464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:29:01.414  INFO 10464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:29:01.415  INFO 10464 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:29:01.428  INFO 10464 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:29:01.457 ERROR 10464 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:33:41.695  INFO 5136 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 5136 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:33:41.699  INFO 5136 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:33:42.315  INFO 5136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:33:42.366  INFO 5136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:33:42.859  INFO 5136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:33:42.870  INFO 5136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:33:42.870  INFO 5136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:33:43.043  INFO 5136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:33:43.044  INFO 5136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1303 ms
+2022-07-05 16:33:43.223  INFO 5136 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:33:43.279  INFO 5136 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:33:43.534  INFO 5136 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:33:43.658  INFO 5136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:33:44.151  INFO 5136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:33:44.171  INFO 5136 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:33:44.423 ERROR 5136 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:33:44.424  WARN 5136 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:33:44.424  INFO 5136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:33:44.428  INFO 5136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:33:44.430  INFO 5136 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:33:44.440  INFO 5136 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:33:44.461 ERROR 5136 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:37:02.800  INFO 15780 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 15780 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:37:02.803  INFO 15780 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:37:03.413  INFO 15780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:37:03.464  INFO 15780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:37:03.956  INFO 15780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:37:03.967  INFO 15780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:37:03.967  INFO 15780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:37:04.107  INFO 15780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:37:04.108  INFO 15780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1262 ms
+2022-07-05 16:37:04.290  INFO 15780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:37:04.345  INFO 15780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:37:04.581  INFO 15780 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:37:04.683  INFO 15780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:37:05.139  INFO 15780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:37:05.160  INFO 15780 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:37:05.478 ERROR 15780 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:37:05.479  WARN 15780 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:37:05.480  INFO 15780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:37:05.485  INFO 15780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:37:05.487  INFO 15780 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:37:05.499  INFO 15780 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:37:05.546 ERROR 15780 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:38:40.442  INFO 16380 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 16380 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:38:40.445  INFO 16380 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:38:41.074  INFO 16380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:38:41.128  INFO 16380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:38:41.625  INFO 16380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:38:41.635  INFO 16380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:38:41.635  INFO 16380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:38:41.772  INFO 16380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:38:41.773  INFO 16380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1283 ms
+2022-07-05 16:38:41.959  INFO 16380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:38:42.014  INFO 16380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:38:42.256  INFO 16380 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:38:42.361  INFO 16380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:38:42.821  INFO 16380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:38:42.840  INFO 16380 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:38:43.099 ERROR 16380 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:38:43.100  WARN 16380 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:38:43.101  INFO 16380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:38:43.105  INFO 16380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:38:43.107  INFO 16380 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:38:43.116  INFO 16380 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:38:43.139 ERROR 16380 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:40:52.094  INFO 880 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 880 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:40:52.126  INFO 880 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:40:52.733  INFO 880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:40:52.783  INFO 880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:40:53.270  INFO 880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:40:53.280  INFO 880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:40:53.281  INFO 880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:40:53.425  INFO 880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:40:53.426  INFO 880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1255 ms
+2022-07-05 16:40:53.604  INFO 880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:40:53.737  INFO 880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:40:53.902  INFO 880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:40:54.007  INFO 880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:40:54.512  INFO 880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:40:54.532  INFO 880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:40:54.792 ERROR 880 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:40:54.793  WARN 880 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:40:54.793  INFO 880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:40:54.797  INFO 880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:40:54.799  INFO 880 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:40:54.810  INFO 880 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:40:54.831 ERROR 880 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:42:51.555  INFO 13960 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 13960 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:42:51.558  INFO 13960 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:42:52.174  INFO 13960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:42:52.224  INFO 13960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:42:52.703  INFO 13960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:42:52.715  INFO 13960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:42:52.715  INFO 13960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:42:52.886  INFO 13960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:42:52.887  INFO 13960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1285 ms
+2022-07-05 16:42:53.061  INFO 13960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:42:53.112  INFO 13960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:42:53.324  INFO 13960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:42:53.423  INFO 13960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:42:53.887  INFO 13960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:42:53.905  INFO 13960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:42:54.162 ERROR 13960 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:42:54.163  WARN 13960 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:42:54.163  INFO 13960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:42:54.167  INFO 13960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:42:54.169  INFO 13960 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:42:54.178  INFO 13960 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:42:54.201 ERROR 13960 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:47:56.914  INFO 13252 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 13252 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:47:56.929  INFO 13252 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:47:57.632 ERROR 13252 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.7.1.jar:2.7.1]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.21.jar:5.3.21]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.21.jar:5.3.21]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.21.jar:5.3.21]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250) ~[spring-boot-autoconfigure-2.7.1.jar:2.7.1]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243) ~[spring-boot-autoconfigure-2.7.1.jar:2.7.1]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233) ~[spring-boot-autoconfigure-2.7.1.jar:2.7.1]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181) ~[spring-boot-autoconfigure-2.7.1.jar:2.7.1]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156) ~[spring-boot-autoconfigure-2.7.1.jar:2.7.1]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.7.1.jar:2.7.1]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/boot/model/naming/PhysicalNamingStrategy
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_191]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_191]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_191]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.21.jar:5.3.21]
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.hibernate.boot.model.naming.PhysicalNamingStrategy
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_191]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_191]
+	... 37 common frames omitted
+
+2022-07-05 16:47:57.676  WARN 13252 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@764c12b6]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.21.jar:5.3.21]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.21.jar:5.3.21]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.21.jar:5.3.21]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:867) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:855) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:842) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:782) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/hibernate/boot/model/naming/PhysicalNamingStrategy
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_191]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_191]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_191]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.21.jar:5.3.21]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.hibernate.boot.model.naming.PhysicalNamingStrategy
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_191]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_191]
+	... 25 common frames omitted
+
+2022-07-05 16:49:22.303  INFO 5892 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 5892 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:49:22.342  INFO 5892 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:49:22.953  INFO 5892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:49:23.007  INFO 5892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:49:23.524  INFO 5892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:49:23.535  INFO 5892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:49:23.536  INFO 5892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:49:23.707  INFO 5892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:49:23.708  INFO 5892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1323 ms
+2022-07-05 16:49:23.890  INFO 5892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:49:23.946  INFO 5892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:49:24.220  INFO 5892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:49:24.333  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:49:24.993  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:49:25.025  INFO 5892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:49:25.299 ERROR 5892 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:49:25.300  WARN 5892 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+2022-07-05 16:49:25.300  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 16:49:25.398  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 16:49:25.401  INFO 5892 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 16:49:25.483  INFO 5892 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 16:49:25.513 ERROR 5892 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: ordertable, for columns: [org.hibernate.mapping.Column(order_price)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:515) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:482) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:231) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+
+2022-07-05 16:52:27.641  INFO 16308 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 16308 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 16:52:27.645  INFO 16308 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 16:52:28.258  INFO 16308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 16:52:28.312  INFO 16308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-07-05 16:52:28.806  INFO 16308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 16:52:28.817  INFO 16308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 16:52:28.817  INFO 16308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 16:52:28.957  INFO 16308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 16:52:28.958  INFO 16308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1270 ms
+2022-07-05 16:52:29.143  INFO 16308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 16:52:29.284  INFO 16308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 16:52:29.453  INFO 16308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 16:52:29.554  INFO 16308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 16:52:30.011  INFO 16308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 16:52:30.030  INFO 16308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 16:52:31.645  INFO 16308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-05 16:52:31.668  INFO 16308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 16:52:32.772  WARN 16308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-05 16:52:33.282  WARN 16308 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-07-05 16:52:33.551  INFO 16308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-05 16:52:33.559  INFO 16308 --- [main] c.r.O.OrderManagementApplication         : Started OrderManagementApplication in 6.335 seconds (JVM running for 7.094)
+2022-07-05 17:10:43.506  INFO 16308 --- [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-05 17:10:43.832  INFO 16308 --- [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 17:10:43.979  INFO 16308 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 17:10:43.985  INFO 16308 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 18:03:03.015  INFO 15636 --- [main] c.r.O.OrderManagementApplication         : Starting OrderManagementApplication using Java 1.8.0_191 on PCVA-CWZHMF2 with PID 15636 (C:\Users\73831\Downloads\Order_Management\Order_Management\target\classes started by 1000073831 in C:\Users\73831\Downloads\Order_Management\Order_Management)
+2022-07-05 18:03:03.048  INFO 15636 --- [main] c.r.O.OrderManagementApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 18:03:03.677  INFO 15636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-05 18:03:03.727  INFO 15636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2022-07-05 18:03:04.265  INFO 15636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-05 18:03:04.275  INFO 15636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-05 18:03:04.276  INFO 15636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-05 18:03:05.395  INFO 15636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-05 18:03:05.396  INFO 15636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2301 ms
+2022-07-05 18:03:05.614  INFO 15636 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-05 18:03:05.686  INFO 15636 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-05 18:03:05.965  INFO 15636 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-05 18:03:06.077  INFO 15636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-05 18:03:06.583  INFO 15636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-05 18:03:06.602  INFO 15636 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-07-05 18:03:06.896 ERROR 15636 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.retail.Order_Management.Order.Product column: order_id (should be mapped with insert="false" update="false")
+2022-07-05 18:03:06.897  WARN 15636 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.retail.Order_Management.Order.Product column: order_id (should be mapped with insert="false" update="false")
+2022-07-05 18:03:06.897  INFO 15636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-05 18:03:06.963  INFO 15636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-05 18:03:06.966  INFO 15636 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-05 18:03:06.978  INFO 15636 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-05 18:03:07.009 ERROR 15636 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.retail.Order_Management.Order.Product column: order_id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.1.jar:2.7.1]
+	at com.retail.Order_Management.OrderManagementApplication.main(OrderManagementApplication.java:14) [classes/:na]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.retail.Order_Management.Order.Product column: order_id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.retail.Order_Management.Order.Product column: order_id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:895) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:913) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:935) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:637) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	... 20 common frames omitted
+

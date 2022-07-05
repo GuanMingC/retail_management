@@ -11,4 +11,5 @@ public interface OrderService {
 	Optional<Order> getOrderById(Integer id);
 	Order updateOrder(Order order, Integer id);
 	List<Order> deleteOrder(Integer id);
+	Optional<Order> getOrderByName(String name);
 }
