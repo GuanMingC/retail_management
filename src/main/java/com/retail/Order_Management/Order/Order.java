@@ -54,8 +54,8 @@ public Order() {
 	Integer order_id;
 	@Column(name="Order_Price")
 	Double order_price;
-	@Column(name="Order_List")
-	ArrayList<String> order_list;
+	@Column(name="Order_Product")
+	String order_product;
 	@Column(name="Name")
 	String name;
 	@Column(name="Email_ID")
@@ -66,17 +66,17 @@ public Order() {
 	@Override
 	public String toString() {
 		return "Order1 [order_id=" + order_id + ", order_price=" + order_price
-				+ ", order_list=" + order_list + ", name=" + name + ", email="
+				+ ", order_list=" + order_product + ", name=" + name + ", email="
 				+ email + "]";
 	}
 	public Order() {
 	}
 	public Order(Integer order_id, Double order_price,
-			ArrayList<String> order_list, String name, String email) {
+			String order_product, String name, String email) {
 		super();
 		this.order_id = order_id;
 		this.order_price = order_price;
-		this.order_list = order_list;
+		this.order_product = order_product;
 		this.name = name;
 		this.email = email;
 	}
@@ -86,11 +86,11 @@ public Order() {
 	public void setOrder_price(Double order_price) {
 		this.order_price = order_price;
 	}
-	public ArrayList<String> getOrder_list() {
-		return order_list;
+	public String getOrder_product() {
+		return order_product;
 	}
-	public void setOrder_list(ArrayList<String> order_list) {
-		this.order_list = order_list;
+	public void setOrder_product(String order_product) {
+		this.order_product = order_product;
 	}
 	public String getName() {
 		return name;
