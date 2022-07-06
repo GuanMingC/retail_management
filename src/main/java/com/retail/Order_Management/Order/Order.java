@@ -53,16 +53,19 @@ public Order() {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="ID", unique = true)
 	Integer order_id;
-	//@Column(name="Order_Price")
-	//Double order_price;
-	//@Column(name="Order_Product")
-	//String order_product;
+	@Column(name="Order_Price")
+	Double order_price;
+	@Column(name="Order_Product")
+	String order_product;
 	//@Column(name="Order_Price")
 	//List<Double> order_price;
 	//@Column(name="Order_Product")
 	//List<String> order_product;
-	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+	
+	/**
+	@OneToMany(mappedBy = "order")
 	List<Product> product;
+	*/
 	@Column(name="Name")
 	String name;
 	@Column(name="Email_ID")
@@ -74,6 +77,16 @@ public Order() {
 	public Order() {
 		super();
 	}
+	
+public Order(Integer order_id, Double order_price, String order_product, String name, String email) {
+		super();
+		this.order_id = order_id;
+		this.order_price = order_price;
+		this.order_product = order_product;
+		this.name = name;
+		this.email = email;
+	}
+
 /**
 	public Order(List<Double> order_price, List<String> order_product, String name, String email) {
 		super();
@@ -83,10 +96,12 @@ public Order() {
 		this.email = email;
 	}
 */
+	/**
 	@Override
 	public String toString() {
 		return "Order [order_id=" + order_id + ", name=" + name + ", email=" + email + "]";
 	}
+	*/
 /**
 	public List<Double> getOrder_price() {
 		return order_price;
@@ -104,6 +119,7 @@ public Order() {
 	public String getName() {
 		return name;
 	}
+	/**
 	public Order(Integer order_id, String name, String email) {
 	super();
 	this.order_id = order_id;
@@ -112,6 +128,7 @@ public Order() {
 	this.name = name;
 	this.email = email;
 }
+*/
 /**
 	public Double getOrder_price() {
 	return order_price;
@@ -137,6 +154,22 @@ public void setOrder_product(String order_product) {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public Double getOrder_price() {
+		return order_price;
+	}
+
+	public void setOrder_price(Double order_price) {
+		this.order_price = order_price;
+	}
+
+	public String getOrder_product() {
+		return order_product;
+	}
+
+	public void setOrder_product(String order_product) {
+		this.order_product = order_product;
 	}
 
 }
